@@ -42,7 +42,7 @@ public class Visit{
         if(customer.isMember()){
             //DiscountRate discountRate = new DiscountRate();
             ///double discount = DiscountRate.getProductDiscountRate(customer.getMemberType());
-            double discount = DiscountRate.getServiceDiscountRate(customer.getMemberType());
+            double discount = DiscountRate.getProductDiscountRate(customer.getMemberType());
             this.productExpense=productExpense-(productExpense*discount);
         }else{
             this.productExpense=productExpense;
